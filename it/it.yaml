@@ -24,6 +24,7 @@ metadata:
     - identity
 spec:
   type: service
+  lifecycle: production
   owner: group:stena-it-devs
   system: stena-platform
   providesApis:
@@ -65,6 +66,7 @@ metadata:
 spec:
   type: library
   owner: group:stena-it-devs
+  lifecycle: production
   system: stena-platform
   dependsOn:
     - component:customer-validation-service

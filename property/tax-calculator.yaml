@@ -24,6 +24,7 @@ metadata:
     - backend
 spec:
   type: service
+  lifecycle: production
   owner: group:stena-properties-devs
   system: property-tax-calculator
 
@@ -40,5 +41,6 @@ metadata:
     - currency
 spec:
   type: service
+  lifecycle: production
   owner: group:stena-properties-devs
   system: property-tax-calculator
