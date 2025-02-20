@@ -45,12 +45,8 @@ spec:
   type: openapi
   owner: group:stena-it-devs
   lifecycle: production
-  definition: |
-    openapi: 3.0.0
-    info:
-      title: Customer Validation API
-      version: 1.0.0
-    paths: {}
+  definition:
+    $text: ./api.yaml
 
 ---
 
