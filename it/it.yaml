@@ -8,7 +8,7 @@ metadata:
     - cloud
     - integration
 spec:
-  owner: group:stena-it-devs
+  owner: group:it-wizards
   domain: stena-it
 
 ---
