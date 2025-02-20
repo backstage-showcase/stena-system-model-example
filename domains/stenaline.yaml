@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: stena-line
+  title: Stena Line
+  description: A major ferry operator within the Stena Group, operating routes across Europe.
+  tags:
+    - shipping
+    - transportation
+    - ferries
+spec:
+  owner: group:stena-line-admins
+  domain: stena-ab

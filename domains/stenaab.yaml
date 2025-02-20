@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: stena-ab
+  title: Stena AB
+  description: The parent company of the Stena Group, overseeing various business areas including shipping, real estate, and finance.
+  tags:
+    - corporate
+    - group
+spec:
+  owner: group:stena-ab-admins

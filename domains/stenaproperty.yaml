@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: stena-property
+  title: Stena Property
+  description: The real estate division of the Stena Group, focusing on property management and development.
+  tags:
+    - real-estate
+    - property-management
+spec:
+  owner: group:stena-property-admins
+  domain: stena-ab
