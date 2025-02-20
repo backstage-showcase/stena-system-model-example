@@ -25,6 +25,8 @@ metadata:
 spec:
   type: service
   lifecycle: production
+  consumesApis:
+    - customer-validation-api
   owner: group:stena-properties-devs
   system: property-tax-calculator
 
