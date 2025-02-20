@@ -9,4 +9,4 @@ metadata:
     - property-management
 spec:
   owner: group:stena-property-admins
-  domain: stena-ab
+  subdomainOf: stena-ab

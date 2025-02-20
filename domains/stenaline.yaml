@@ -10,4 +10,4 @@ metadata:
     - ferries
 spec:
   owner: group:stena-line-admins
-  domain: stena-ab
+  subdomainOf: stena-ab
