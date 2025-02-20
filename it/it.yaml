@@ -46,7 +46,7 @@ spec:
   owner: group:stena-it-devs
   lifecycle: production
   definition:
-    $text: ./api.yaml
+    $yaml: ./api.yaml
 
 ---
 
