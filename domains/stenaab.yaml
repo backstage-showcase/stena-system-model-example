@@ -8,4 +8,4 @@ metadata:
     - corporate
     - group
 spec:
-  owner: group:stena-ab-admins
+  owner: group:stena-ab

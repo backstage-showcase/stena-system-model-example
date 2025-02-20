@@ -9,5 +9,5 @@ metadata:
     - transportation
     - ferries
 spec:
-  owner: group:stena-line-admins
+  owner: group:stena-ab
   subdomainOf: stena-ab

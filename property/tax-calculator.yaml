@@ -8,8 +8,8 @@ metadata:
     - finance
     - tax
 spec:
-  owner: group:stena-property-devs
-  subdomainOf: stena-propery
+  owner: group:tax-team
+  subdomainOf: stena-property
 
 ---
 
@@ -27,7 +27,7 @@ spec:
   lifecycle: production
   consumesApis:
     - customer-validation-api
-  owner: group:stena-properties-devs
+  owner: group:tax-team
   system: property-tax-calculator
 
 ---
@@ -44,5 +44,5 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: group:stena-properties-devs
+  owner: group:tax-team
   system: property-tax-calculator

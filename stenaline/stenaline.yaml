@@ -8,7 +8,7 @@ metadata:
     - travel
     - ferry-booking
 spec:
-  owner: group:stena-line-devs
+  owner: group:trip-planners
   domain: stena-line
 
 ---
@@ -24,7 +24,7 @@ metadata:
     - backend
 spec:
   type: service
-  owner: group:stena-line-devs
+  owner: group:trip-planners
   lifecycle: production
   system: stena-trip-planner
   dependsOn:

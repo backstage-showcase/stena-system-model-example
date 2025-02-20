@@ -8,5 +8,5 @@ metadata:
     - real-estate
     - property-management
 spec:
-  owner: group:stena-property-admins
+  owner: group:stena-ab
   subdomainOf: stena-ab

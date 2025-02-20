@@ -25,7 +25,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: group:stena-it-devs
+  owner: group:it-wizards
   system: stena-platform
   providesApis:
     - customer-validation-api
@@ -43,7 +43,7 @@ metadata:
     - authentication
 spec:
   type: openapi
-  owner: group:stena-it-devs
+  owner: group:it-wizards
   lifecycle: production
   definition:
     $text: ./api.json
@@ -61,7 +61,7 @@ metadata:
     - monitoring
 spec:
   type: library
-  owner: group:stena-it-devs
+  owner: group:it-wizards
   lifecycle: production
   system: stena-platform
   dependsOn:

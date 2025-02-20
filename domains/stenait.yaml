@@ -8,5 +8,5 @@ metadata:
     - it
     - technology
 spec:
-  owner: group:stena-it-admins
+  owner: group:stena-ab
   subdomainOf: stena-ab
