@@ -25,6 +25,7 @@ metadata:
 spec:
   type: service
   owner: group:stena-line-devs
+  lifecycle: production
   system: stena-trip-planner
   dependsOn:
     - component:logging-library
