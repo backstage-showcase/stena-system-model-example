@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: stena-trip-planner
+  title: Stena Trip Planner
+  description: A travel planning system for Stena Line, helping customers plan and book ferry trips.
+  tags:
+    - travel
+    - ferry-booking
+spec:
+  owner: group:stena-line-devs
+  domain: stena-line
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: stena-trip-service
+  title: Stena Trip Service
+  description: The core backend service responsible for processing trip bookings.
+  tags:
+    - travel
+    - backend
+spec:
+  type: service
+  owner: group:stena-line-devs
+  system: stena-trip-planner
+  dependsOn:
+    - component:logging-library

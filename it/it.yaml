@@ -1,0 +1,70 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: stena-platform
+  title: Stena Platform
+  description: The main IT platform providing digital solutions for various Stena businesses.
+  tags:
+    - cloud
+    - integration
+spec:
+  owner: group:stena-it-devs
+  domain: stena-it
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: customer-validation-service
+  title: Customer Validation Service
+  description: A service responsible for validating customer details across Stena platforms.
+  tags:
+    - validation
+    - identity
+spec:
+  type: service
+  owner: group:stena-it-devs
+  system: stena-platform
+  providesApis:
+    - customer-validation-api
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: customer-validation-api
+  title: Customer Validation API
+  description: An API that validates customer identity and status within the Stena system.
+  tags:
+    - api
+    - authentication
+spec:
+  type: openapi
+  owner: group:stena-it-devs
+  lifecycle: production
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Customer Validation API
+      version: 1.0.0
+    paths: {}
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: logging-library
+  title: Logging Library
+  description: A reusable library for structured logging across Stena's IT infrastructure.
+  tags:
+    - logging
+    - monitoring
+spec:
+  type: library
+  owner: group:stena-it-devs
+  system: stena-platform
+  dependsOn:
+    - component:customer-validation-service

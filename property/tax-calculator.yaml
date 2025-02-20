@@ -1,0 +1,44 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: property-tax-calculator
+  title: Property Tax Calculator
+  description: A system that calculates property tax for real estate managed by Stena Properties.
+  tags:
+    - finance
+    - tax
+spec:
+  owner: group:stena-property-devs
+  subdomainOf: stena-propery
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: property-tax-service
+  title: Property Tax Service
+  description: The core service responsible for computing property tax based on real estate data.
+  tags:
+    - taxation
+    - backend
+spec:
+  type: service
+  owner: group:stena-properties-devs
+  system: property-tax-calculator
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: currency-converter-service
+  title: Currency Converter Service
+  description: A microservice that provides real-time currency exchange rates for tax calculations.
+  tags:
+    - finance
+    - currency
+spec:
+  type: service
+  owner: group:stena-properties-devs
+  system: property-tax-calculator

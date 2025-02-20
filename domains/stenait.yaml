@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: stena-it
+  title: Stena IT
+  description: The IT division of Stena Group responsible for digital transformation and technical platforms.
+  tags:
+    - it
+    - technology
+spec:
+  owner: group:stena-it-admins
+  subdomainOf: stena-ab
