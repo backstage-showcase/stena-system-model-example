@@ -9,7 +9,7 @@ metadata:
     - tax
 spec:
   owner: group:tax-team
-  subdomainOf: stena-property
+  domain: stena-property
 
 ---
 
